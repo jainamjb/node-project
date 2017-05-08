@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+     <title> Feedback</title>
+     
+     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        *{
+    margin:0px;
+    padding:0px;
+}
+nav{width: 100%;}
+.navbar{
+    width: 100%;
+}
+nav ul li{
+    padding-left:5px;
+    padding-right:5px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.dropdown-menu{
+    background-color:#1E1E1E;
+}
+.dropdown-menu li a{
+    color:#696969;
+}
+@media (min-width: 768px) {
+.dropdown-menu li:hover .sub-menu {visibility: visible;}
+}
+ @media (min-width: 768px) {
+.dropdown:hover .dropdown-menu {display: block;}
+}
+
+nav ul li:hover{
+    background-color:#828282;
+}
+
+a:hover{
+    font-size:125%;
+}
+#nav-bar{
+    width:100%;
+    position:fixed;
+    z-index:10000;
+
+}
+
+
+    	body{
+    		background-image:url('http://cdn.wonderfulengineering.com/wp-content/uploads/2014/01/Lenovo-wallpaper-6.jpg') ;
+            no-repeat:true;
+    	}
+        form{
+            margin-top: 13vh;
+        }
+    	#id{
+    		margin-bottom: 8px;
+    		width :150px;
+    		align:center;
+    	}
+    	    	#textarea{
+            margin-bottom: 8px;
+    		align:center;
+    		max-width: 713px;
+    	}
+    	    	#submit{
+    		margin-bottom: 8px;
+    		align:center;
+    		color:#fff;
+    		background-color: rgba(34, 143, 206, 0.82);
+    	}
+    	   	#title{
+    		margin-bottom: 8px;
+    		align:center;
+    	}
+        .formcontrol{
+
+        }
+
+    </style> 
+	</head>
+	<body ><nav class="navbar navbar-inverse" role="navigation">
+<div class="navbar-header">
+<a class="navbar-brand" href="/index">E-Library</a>
+</div>
+<div><!--Left Align-->
+<ul class="nav navbar-nav navbar-left">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+BOOKS
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li><a href="#">E-BOOKS</a></li>
+<li><a href="#">LIBRARY BOOKS</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-left"><li>
+<a href="#" >
+PAPERS
+</a></ul><ul class="nav navbar-nav navbar-left"><li>
+<a href="#" >
+ABOUT US
+</a></li></ul>
+<!--Right Align-->
+<ul class="nav navbar-nav navbar-left"><li>
+<a href="/feedback" >
+FEEDBACK 
+</a></li></ul>
+<ul class="nav navbar-nav navbar-left"><li>
+<a href="#" >
+DONATE 
+</a></li></ul>
+<ul class="nav navbar-nav navbar-right"><li>
+<a href="/logout" >
+LOGOUT 
+</a></li></ul>
+<ul class="nav navbar-nav navbar-right"><li>
+<a href="/profile" >
+PROFILE 
+</a></li></ul>
+
+
+</div>
+</nav>
+<div class="container row ">
+	<form method="post" action="/feedback" class="col col-lg-offset-4 col-lg-6 col-lg-offset-4 col-sm-12 glyphicon-font form-group">
+      <input type="text" class="form-control" id="id" placeholder="Enter your Id no.: " name="id">
+     </input>
+     <input type="text" class="form-control" id="title" placeholder="TITLE " name="title">
+     </input>
+     <textarea id ="textarea" class="form-control" cols=100 rows=10 placeholder="Give us your feedback:" name="textarea"></textarea>
+     <input type="submit" class="btn" id="submit" value="SUBMIT" name="submit">
+     </input>
+     </form>
+     </div>
+	</body>
+</html>

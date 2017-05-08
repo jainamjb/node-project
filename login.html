@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>LOGIN PAGE</title>
+    <style>
+    body{
+		background-color:rgba(83,197,127,0.30);
+		background-image:url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-2YB6blJkwgg%2FTzbgsCq3iTI%2FAAAAAAAAA7Y%2FgLDEiFXU75I%2Fs1600%2F115.Jpg&f=1);
+		
+	}
+	form{
+		margin-top: 22vh;
+		width:auto;
+		height: 43vh;
+		z-index:100;
+  border: 8px solid;
+  border-top-color: rgba(255,255,255,.4);
+  border-left-color: rgba(255,255,255,.4);
+  border-bottom-color: rgba(60,60,60,.4);
+  border-right-color: rgba(60,60,60,.4);
+	background-color: rgba(77,102,126,.9);
+	}
+	
+	#username{
+		margin-left: 0px;
+		max-width:42vh;
+
+	}
+	#password{
+		margin-left: 0px;
+		max-width:42vh;
+	}
+	#submit{
+		margin-left: 47px;
+
+	}
+
+	#login{
+		font-size: 18px;
+		margin-left: 47px;
+		color: #fff;
+	}	
+	}
+	.form-control{
+		margin-right: 6px;
+	}
+	.row{
+		height: auto;
+	}
+	.input-group{
+		padding: 0px;
+		margin-left: 47px;
+	}
+	    .glyphicon {
+        top: 0;
+    }
+
+    </style>
+
+</head>
+
+<body class="row">
+<div class="">
+<div>
+<form action="/login" class="col col-lg-offset-4 col-lg-4 col-lg-offset-4 col-sm-12 glyphicon-font form-group" id="form" method="post"  class="form-group">
+<br/>
+<div id="login" class="control-label">
+<b>LOGIN:</b>
+<br />
+</div>
+<br/>
+<div class="input-group">
+  <span class="input-group-addon glyphicon glyphicon-user " ></span>
+<input type="text" class="form-control" pattern=".{4,}"   required title="minimum 4 characters" placeholder="username/email" name="username" id="username" /></div>
+<br/>
+<div class="input-group">
+  <span class="input-group-addon glyphicon glyphicon-lock " ></span>
+<input type="password" class="form-control "  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters"  placeholder="password" name="password" id="password"></div>
+
+<br/>
+<input type="submit" class="btn" value="LOGIN!" name="submit" id="submit"/>
+
+</form>
+</div>
+</div>
+</body>
+</html>

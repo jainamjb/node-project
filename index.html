@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E-library</title>
+    <!--[if lt IE 9]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://www.goat1000.com/tagcanvas.min.js?2.9" type="text/javascript"></script>
+    <script src="http://www.goat1000.com/jquery.tagcanvas.min.js?2.9" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        if(!$('#myCanvas').tagcanvas({
+          textColour: '#fff',
+          outlineColour: '#000',
+          reverse: true,
+          textHeight: 27,
+          depth: 0.8,
+          maxSpeed: 0.02
+        },'tags')) {
+          // something went wrong, hide the canvas container
+          $('#myCanvasContainer').hide();
+        }
+      });
+    </script>
+    <style type="text/css">
+      #canv{
+        margin-left:25%;
+    margin-right:25%;
+    margin-top:auto;
+    margin-bottom:auto;
+    z-index:100;
+      }
+      canvas {
+  width: 100%;
+  height:auto;
+}
+      body{
+background-image: url(https://images.duckduckgo.com/iur/?f=1&image_host=http%3A%2F%2Ffc07.deviantart.net%2Ffs71%2Ff%2F2011%2F167%2F4%2F8%2Falmacon_2012_background_by_sakurirainne-d3j3s4i.png&u=http://orig06.deviantart.net/a380/f/2011/167/4/8/almacon_2012_background_by_sakurirainne-d3j3s4i.png);      }
+    </style>
+  </head>
+  <body>
+  <div id="canv">
+    <h1 style="color: #FFF;text-align: center; text-shadow: 2px; font-size: 40px;"><b>E-LIBRARY</b></h1>
+    <div id="myCanvasContainer">
+      <canvas width="600" height="475" id="myCanvas">
+      </canvas>
+    </div>
+    <div id="tags">
+      <ul>
+        <li><a href="login" style="font-size: xx-large;" target="_blank"><b>LOGIN</b></a></li>
+        <li><a href="/papers" ><b>PAPERS</b></a></li>
+        <li><a href="/ABOUT"><b>ABOUT</b></a></li>
+        <li><a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&sqi=2&ved=0ahUKEwiYz4nugPDSAhUHsY8KHQ01ALgQFggaMAA&url=http%3A%2F%2Fwww.vjti.ac.in%2F&usg=AFQjCNEEOo5fiPYbhb1kx18cDAksKxDajA&bvm=bv.150729734,d.c2I"><b>VJTI</b></a></li>
+
+        <li>	<a href="/prof" style="font-size: 8.36ex"><b>PROFILE</b></a>
+	<a href="#" style="font-size: 14.36ex"></a>
+	<a href="#" style="font-size: 13.32ex"><b>DONATE</b></a>
+	<a href="/FEEDBACK" style="font-size: 20.68ex"><b>FEEDBACK</b></a>
+	<a href="/faq" style="font-size: 14.69ex"><b>FAQ's</b></a>
+	<a href="http://vjti.ac.in/index.php/facilities/library-s/2-uncategorised/63-library-e-resources" style="font-size: 14.8ex"><b>E-BOOKS</b></a>
+</li>
+        <li><a href="/BOOKS">BOOKS</a></li>
+        <li><a href="/SIGNUP">SIGNUP</a></li>
+      </ul>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
